@@ -1,22 +1,13 @@
-// export default function flashcardsReducer (state = {
-//     flashcards = [],
-//     // loading: false
-// }, action) {
-//     switch(action.type) {
-//         // case 'LOADING_FLASHCARDS':
-//         //     return {...state, loading: true}
-//         case 'FETCH_FLASHCARDS':
-//             return {flashcards: action.payload}
-//         default:
-//           return state
-//     }
-// }
-
-export default function flashcardsReducer(state = [], action) {
+export default function flashcardsReducer (state = {
+    flashcards: [],
+    loading: false
+}, action) {
     switch(action.type) {
+        case 'LOADING_FLASHCARDS':
+            return {...state, loading: true}
         case 'FETCH_FLASHCARDS':
-            return action.payload
+            return {...state, loading: false, flashcards: action.flashcards}
         default:
-            return state
+          return state
     }
 }

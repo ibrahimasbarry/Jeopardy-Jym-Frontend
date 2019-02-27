@@ -1,16 +1,7 @@
-// export default function fetchFlashcards() {
-//     return (dispatch) => {
-//         dispatch({ type: 'LOADING_FLASHCARDS' })
-//         return fetch('http://localhost:3000/')
-//             .then(response => response.json())
-//             .then(flashcards => dispatch({ type: 'FETCH_FLASHCARDS', payload: flashcards }))
-//     }
-// } 
-
 export const fetchFlashcards = () => dispatch => {
-    return fetch("http://localhost:3000")
+    return fetch("http://localhost:5000/flashcards")
       .then(response => response.json())
-      .then(flashcards =>
-        dispatch({ type: "FETCH_FLASHCARDS", payload: flashcards })
+      .then(flashcards => 
+        dispatch({ type: "FETCH_FLASHCARDS", flashcards })
       )
   }

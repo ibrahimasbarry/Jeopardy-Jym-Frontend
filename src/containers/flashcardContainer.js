@@ -3,15 +3,15 @@ import { connect } from 'react-redux';
 import { fetchFlashcards } from '../redux/actions/flashcardActions';
 
 class FlashcardContainer extends Component {
-    state = {
-        flashcards: []
-    }
 
     componentDidMount() {
         this.props.fetchFlashcards()
     }
 
     render() {
+        if (this.props.flashcards.length === 0) {
+            return <h1>Loading...</h1>
+          }
         return (
             <div>
                 <ul>
@@ -28,12 +28,8 @@ class FlashcardContainer extends Component {
     }
 }
 
-const mapStateToProps = state => {
-    return { flashcards: state.flashcards }
+const mapStateToProps = state => { 
+    return {flashcards: state.flashcardsReducer.flashcards} 
 }
-
-// const mapDispatchToProps = dispatch => {
-//     return { fetchFlashcards: flashcards => dispatch({ type: 'FETCH_FLASHCARDS', flashcards})}
-// }
 
 export default connect(mapStateToProps, { fetchFlashcards })(FlashcardContainer);
