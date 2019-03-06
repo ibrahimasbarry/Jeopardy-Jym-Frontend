@@ -7,8 +7,8 @@ import Home from './Home'
 const NavBar = () => {
     return(
         <Router>
-        <div>
-        <nav>
+        <div className="routes">
+        <nav className="nav">
             <Link to='/'>Home</Link>
             <Link to='/flashcards'>Jeopardy</Link>
             <Link to='/flashcards/create'>Create</Link>

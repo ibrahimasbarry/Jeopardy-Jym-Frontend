@@ -36,7 +36,7 @@ class FlashcardInput extends Component {
                 <input type="text" name="category" placeholder="Catgeory, e.g. -ESQUE" value={this.state.category} onChange={(event) => this.handleChange(event)}/><br />
                 <input type="text" name="question" placeholder="Question, e.g. Visually charming or quaint." value={this.state.question} onChange={(event) => this.handleChange(event)}/><br />
                 <input type="text" name="answer" placeholder="Answer, e.g. Picturesque" value={this.state.answer} onChange={(event) => this.handleChange(event)}/>< br />
-                <button>Create</button>
+                <button className="button" type="button">Create</button>
             </form>          
         </div>
         )

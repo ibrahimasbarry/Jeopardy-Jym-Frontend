@@ -13,7 +13,7 @@ class FlashcardContainer extends Component {
 
     render() {
         return (
-            <div>
+            <div className="card-display">
                 {this.props.flashcards.length === 0 ? <Loading /> : <DrawFlashcardContainer flashcards={this.props.flashcards} /> }   
             </div>
         )

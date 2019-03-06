@@ -35,12 +35,12 @@ class DrawFlashcardContainer extends Component {
 
     render() {
         return (
-          <div className="DrawnFlashcard">
-            <div className="flashcardRow">
+          <div className="current-card">
+            <div className="card-row">
               <Flashcard flashcard={this.state.currentFlashcard} />
             </div>
             
-            <div className="buttonRow">
+            <div className="button-row">
               <DrawFlashcard update={this.updateFlashcard}/>
             </div>
           </div>
