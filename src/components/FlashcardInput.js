@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import FlashcardForm from './FlashcardForm';
 
 class FlashcardInput extends Component {
 
@@ -28,20 +29,15 @@ class FlashcardInput extends Component {
         });
     }
 
-    
-
     render() {
         return (
-        <div>
+        <div className="form">
             <form onSubmit={(event) => this.handleSubmit(event)}>
-                <input type="text" name="category" value={this.state.category} onChange={(event) => this.handleChange(event)}/>
-                <input type="text" name="question" value={this.state.question} onChange={(event) => this.handleChange(event)}/>
-                <input type="text" name="answer" value={this.state.answer} onChange={(event) => this.handleChange(event)}/>
+                <input type="text" name="category" placeholder="Catgeory, e.g. -ESQUE" value={this.state.category} onChange={(event) => this.handleChange(event)}/><br />
+                <input type="text" name="question" placeholder="Question, e.g. Visually charming or quaint." value={this.state.question} onChange={(event) => this.handleChange(event)}/><br />
+                <input type="text" name="answer" placeholder="Answer, e.g. Picturesque" value={this.state.answer} onChange={(event) => this.handleChange(event)}/>< br />
                 <button>Create</button>
-            </form>
-
-    
-            
+            </form>          
         </div>
         )
     }

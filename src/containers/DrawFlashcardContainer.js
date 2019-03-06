@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Flashcard from '../components/Flashcard';
-import DrawFlashcard from '../components/DrawFlashcard';
-//import Answer from '../components/Answer';
+import DrawFlashcard from '../components/DrawFlashcard'
 
 class DrawFlashcardContainer extends Component {
 
@@ -40,7 +39,7 @@ class DrawFlashcardContainer extends Component {
             <div className="flashcardRow">
               <Flashcard flashcard={this.state.currentFlashcard} />
             </div>
-            {/*<Answer onClick={(event)this.handleClick(event)}back={this.state.currentFlashcard} />*/}
+            
             <div className="buttonRow">
               <DrawFlashcard update={this.updateFlashcard}/>
             </div>

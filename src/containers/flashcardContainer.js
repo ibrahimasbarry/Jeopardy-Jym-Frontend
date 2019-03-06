@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchFlashcards } from '../redux/actions/flashcardActions';
-import Flashcard from '../components/Flashcard';
+// import Flashcard from '../components/Flashcard';
 import Loading  from '../components/Loading';
 import DrawFlashcardContainer from './DrawFlashcardContainer';
 
