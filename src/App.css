@@ -21,6 +21,34 @@
   color: #ffd700;
 }
 
+.app-description-container {
+  display: flex;
+  height: 93vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 2em;
+  margin-right: 25em;
+}
+
+.app-description {
+  width: 10em;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #060CE9;
+  box-shadow: 2px 3px 23px rgba(0,0,0,.1);
+  padding: 1em 3em;
+	transform-style: preserve-3d;
+  margin-bottom: 10em;
+  transition: 0.2s;
+  margin-left: 25em;
+  border: 2px solid #ffd700;
+  color: white;
+  font-size: 30px;
+}
+
 /* .App-link {
   color: #61dafb;
 } */

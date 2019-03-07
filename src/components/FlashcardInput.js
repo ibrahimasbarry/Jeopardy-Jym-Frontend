@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-// import FlashcardForm from './FlashcardForm';
+import React, { Component } from 'react'
 
 class FlashcardInput extends Component {
 
@@ -9,19 +8,20 @@ class FlashcardInput extends Component {
         this.state = {
             question: '',
             answer: '',
-            category: ''
+            category: '',
         }
     }
 
     handleChange(event) {
         this.setState({
-           [event.target.name]: event.target.value
+           [event.target.name]: event.target.value,
         });
-    }
+    }  
 
-    handleSubmit(event) {
+    handleSubmit = (event) => {
         event.preventDefault();
         this.props.createFlashcard({flashcard: this.state});
+        alert('Success');
         this.setState({
             question: '',
             answer: '',
@@ -33,12 +33,12 @@ class FlashcardInput extends Component {
         return (
         <div className="form-container">
         <div className="form">
-            <form onSubmit={(event) => this.handleSubmit(event)}>
+            <form onSubmit={this.handleSubmit}>
             <p>Create your own Jeopardy card:</p>
-                <input type="text" name="category" className="input" placeholder="Catgeory: e.g. -ESQUE" value={this.state.category} onChange={(event) => this.handleChange(event)}/><br />
-                <input type="text" name="question" className="input" placeholder="Question: e.g. Visually charming or quaint." value={this.state.question} onChange={(event) => this.handleChange(event)}/><br />
-                <input type="text" name="answer" className="input" placeholder="Answer: e.g. Picturesque" value={this.state.answer} onChange={(event) => this.handleChange(event)}/>< br />
-                <button className="create-card" type="button">Create Card</button>
+                <input type="text" name="category" className="input" placeholder="Catgeory: e.g. -ESQUE" value={this.state.category} onChange={(event) => this.handleChange(event)} required /><br />
+                <input type="text" name="question" className="input" placeholder="Question: e.g. Visually charming or quaint." value={this.state.question} onChange={(event) => this.handleChange(event)} required /><br />
+                <input type="text" name="answer" className="input" placeholder="Answer: e.g. Picturesque" value={this.state.answer} onChange={(event) => this.handleChange(event)} required />< br />
+                <button className="create-card" type="submit">Create Card</button>
             </form>  
         </div>        
         </div>
