@@ -8,11 +8,11 @@ const NavBar = () => {
     return(
         <Router>
         <div className="routes">
-        <nav className="nav">
-            <Link to='/'>Home</Link>
-            <Link to='/flashcards'>Jeopardy</Link>
-            <Link to='/flashcards/create'>Create</Link>
-        </nav>
+        <ul className="nav">
+            <li className="nav-link"><Link to='/'>Home</Link></li>
+            <li className="nav-link"><Link to='/flashcards'>Jeopardy</Link></li>
+            <li className="nav-link"><Link to='/flashcards/create'>Create</Link></li>
+        </ul>
         <hr />
             <Route exact path='/' component={Home} />
             <Route exact path='/flashcards' component={FlashcardContainer} />

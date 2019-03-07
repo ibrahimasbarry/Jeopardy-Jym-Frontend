@@ -20,11 +20,13 @@ class Flashcard extends Component {
         return(
             <>
         <ul>
+        <div className="flashcard-container">
             <div className="flashcard" key={this.props.flashcard.id}>
-                { this.state.showAnswer ? <p className="card-back">Answer: {this.props.flashcard.answer}</p> : <><p className="card-front">Category: {this.props.flashcard.category}</p> <p className="card-front">Question: {this.props.flashcard.question}</p></> }
+                { this.state.showAnswer ? <p className="card-back">Answer:<br /> {this.props.flashcard.answer}</p> : <div className="card-front"><p>Category:<br /> {this.props.flashcard.category}</p> <p>Question:<br /> {this.props.flashcard.question}</p></div> }
             </div>
+        </div>
          </ul>
-         <button className="button" type="button" onClick={this.handleClick}>Show Answer</button> 
+         <button className="show-answer" type="button" onClick={this.handleClick}>Show Answer</button> 
             </>
         )
     }

@@ -8,8 +8,8 @@ class DrawFlashcard extends Component {
 
     render(){
         return(
-            <div className="buttonContainer">
-                <button className="button" type="button" onClick={(event) => this.handleClick(event)}>Draw Flashcard</button>
+            <div className="draw-container">
+                <button className="draw-card" type="button" onClick={(event) => this.handleClick(event)}>Draw Flashcard</button>
             </div>
         )
     }
