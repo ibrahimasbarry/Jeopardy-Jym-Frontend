@@ -22,7 +22,7 @@ class Flashcard extends Component {
         <ul>
         <div className="flashcard-container">
             <div className="flashcard" key={this.props.flashcard.id}>
-                { this.state.showAnswer ? <p className="card-back">Answer:<br /> {this.props.flashcard.answer}</p> : <div className="card-front"><p>Category:<br /> {this.props.flashcard.category}</p> <p>Question:<br /> {this.props.flashcard.question}</p></div> }
+                { this.state.showAnswer ? <p className="card-back">Answer:<br /><br /> {this.props.flashcard.answer}</p> : <div className="card-front"><p>Category:<br /><br /> {this.props.flashcard.category}</p> <p>Question:<br /><br /> {this.props.flashcard.question}</p></div> }
             </div>
         </div>
          </ul>

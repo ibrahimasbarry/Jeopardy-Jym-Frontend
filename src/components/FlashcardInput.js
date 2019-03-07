@@ -31,13 +31,16 @@ class FlashcardInput extends Component {
 
     render() {
         return (
+        <div className="form-container">
         <div className="form">
             <form onSubmit={(event) => this.handleSubmit(event)}>
-                <input type="text" name="category" placeholder="Catgeory, e.g. -ESQUE" value={this.state.category} onChange={(event) => this.handleChange(event)}/><br />
-                <input type="text" name="question" placeholder="Question, e.g. Visually charming or quaint." value={this.state.question} onChange={(event) => this.handleChange(event)}/><br />
-                <input type="text" name="answer" placeholder="Answer, e.g. Picturesque" value={this.state.answer} onChange={(event) => this.handleChange(event)}/>< br />
-                <button className="button" type="button">Create</button>
-            </form>          
+            <p>Create your own Jeopardy card:</p>
+                <input type="text" name="category" className="input" placeholder="Catgeory: e.g. -ESQUE" value={this.state.category} onChange={(event) => this.handleChange(event)}/><br />
+                <input type="text" name="question" className="input" placeholder="Question: e.g. Visually charming or quaint." value={this.state.question} onChange={(event) => this.handleChange(event)}/><br />
+                <input type="text" name="answer" className="input" placeholder="Answer: e.g. Picturesque" value={this.state.answer} onChange={(event) => this.handleChange(event)}/>< br />
+                <button className="create-card" type="button">Create Card</button>
+            </form>  
+        </div>        
         </div>
         )
     }

@@ -6,10 +6,11 @@
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
+  003366
 } */
 
 .App-body {
-  background-color: #003366;
+  background-color: #060CE9;
   min-height: 100vh; 
   display: flex;
   flex-direction: column;
@@ -39,7 +40,7 @@
 
 .nav-link a {
   display: block;
-  color: #ffffff;
+  color:#ffffff;
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
@@ -66,7 +67,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: #060CE9;
   box-shadow: 2px 3px 23px rgba(0,0,0,.1);
   padding: 1em 3em;
 	transform-style: preserve-3d;
@@ -74,6 +75,7 @@
   transition: 0.2s;
   margin-left: 23em;
   border: 2px solid #ffd700;
+  color: white;
 }
 
 .card-back {
@@ -110,9 +112,49 @@
   position: absolute;
 }
 
-/* .show-answer:hover {
-  background: darken(goldenrod, 50%);
-} */
+.form-container {
+  display: flex;
+  height: 93vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 2em;
+  margin-right: 25em;
+}
+
+.form {
+  width: 30em;
+  height: 15em;
+  line-height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #060CE9;
+  box-shadow: 2px 3px 23px rgba(0,0,0,.1);
+  padding: 1em 3em;
+	transform-style: preserve-3d;
+  margin-bottom: 10em;
+  transition: 0.2s;
+  margin-left: 23em;
+  border: 2px solid #ffd700;
+  color: white;
+  font-weight: bolder;
+}
+
+.input {
+  width: 22em;
+  height: 2em;
+}
+
+.create-card {
+  margin: 2em;
+  cursor: pointer;
+  padding: 0.5em 0.75em;
+  background: #ffd700;
+  color: black;
+  transition: 0.2s;
+  font-weight: bolder;
+}
 
 /* @keyframes App-logo-spin {
   from {
