@@ -27,7 +27,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 0 2em;
+  padding: 0;
   margin-right: 18em;
 }
 
@@ -39,14 +39,15 @@
   align-items: center;
   background: #060CE9;
   box-shadow: 2px 3px 23px rgba(0,0,0,.1);
-  padding: 1em 3em;
-	transform-style: preserve-3d;
+  padding: 1em 3em 1em 3em;
+	/* transform-style: preserve-3d; */
   /* margin-bottom: 20em; */
-  transition: 0.2s;
-  margin-left: 15em;
+  /* transition: 0.2s; */
+  margin-left: 17em;
   border: 2px solid #CEA05B;
   color: white;
   font-size: 20px;
+  text-align: center;
 }
 
 /* .App-link {
@@ -149,7 +150,7 @@
 } */
 
 .draw-card {
-  margin-left: -5.5em;
+  margin-left: -6em;
   top: 52.5em;
   cursor: pointer;
   padding: 0.5em 0.75em;

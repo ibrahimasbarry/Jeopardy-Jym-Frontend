@@ -11,6 +11,8 @@ class FlashcardContainer extends Component {
         this.props.fetchFlashcards()
     }
 
+
+
     render() {
         return (
             <div className="card-display">

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Flashcard from '../components/Flashcard';
-import DrawFlashcard from '../components/DrawFlashcard'
+// import DrawFlashcard from '../components/DrawFlashcard'
 
 class DrawFlashcardContainer extends Component {
 
