@@ -12,28 +12,28 @@
 .App-body {
   background-color: #060CE9;
   min-height: 100vh; 
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
   /* font-size: calc(10px + 2vmin); */
   font-size: 20px;
-  color: #ffd700;
+  color: #CEA05B;
 }
 
 .app-description-container {
-  display: flex;
+  /* display: flex; */
   height: 93vh;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   padding: 0 2em;
-  margin-right: 25em;
+  margin-right: 18em;
 }
 
 .app-description {
-  width: 10em;
-  height: 5em;
+  width: 30em;
+  height: 15em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,12 +41,12 @@
   box-shadow: 2px 3px 23px rgba(0,0,0,.1);
   padding: 1em 3em;
 	transform-style: preserve-3d;
-  margin-bottom: 10em;
+  /* margin-bottom: 20em; */
   transition: 0.2s;
-  margin-left: 25em;
-  border: 2px solid #ffd700;
+  margin-left: 15em;
+  border: 2px solid #CEA05B;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 /* .App-link {
@@ -56,14 +56,15 @@
 .nav {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   overflow: hidden;
-  background-color: #ffd700;
+  background-color: #CEA05B;
 }
 
 .nav-link {
-  /* float: left; */
+  display: inline-block;
   text-align: center;
+  /* text-shadow: 0px 1px #060CE9; */
 }
 
 .nav-link a {
@@ -76,7 +77,8 @@
 }
 
 .nav-link a:hover {
-  background-color: goldenrod;
+  background-color: #060ee9;
+
 }
 
 .flashcard-container {
@@ -86,7 +88,10 @@
   align-items: center;
   margin: 0 auto;
   padding: 0 2em;
-  margin-right: 25em;
+  margin-right: 50em;
+  bottom: 5em;
+  position: relative;
+  transition: ease-in;
 }
 
 .flashcard {
@@ -102,50 +107,65 @@
   margin-bottom: 10em;
   transition: 0.2s;
   margin-left: 23em;
-  border: 2px solid #ffd700;
+  border: 2px solid #CEA05B;
   color: white;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 0.6s ease-in-out;
+  text-align: center;
+}
+
+.flashcard:hover {
+    transform: rotateY(180deg);
+    transition: all 0.6s ease-in-out;
 }
 
 .card-back {
   animation: fadeInUp 0.5s;
   font-weight: bold;
+
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
 }
 
 .card-front {
   animation: fadeIn 0.6s;
   font-weight: bold;
+
+  position: absolute;
+  backface-visibility: hidden;
 }
 
-.show-answer {
+/* .show-answer {
   margin-left: 2.5em;
-  top: 50em;
+  top: 52.5em;
   cursor: pointer;
   padding: 0.5em 0.75em;
-  background: #ffd700;
+  background: #CEA05B;
   color: black;
   transition: 0.2s;
   font-weight: bolder;
   position: absolute;
-}
+} */
 
 .draw-card {
-  margin-left: -12em;
-  top: 50em;
+  margin-left: -5.5em;
+  top: 52.5em;
   cursor: pointer;
   padding: 0.5em 0.75em;
-  background: #ffd700;
-  color: black;
+  background: #CEA05B;
+  color: white;
   transition: 0.2s;
   font-weight: bolder;
   position: absolute;
 }
 
 .form-container {
-  display: flex;
+  /* display: flex; */
   height: 93vh;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 2em;
   margin-right: 25em;
 }
@@ -161,10 +181,10 @@
   box-shadow: 2px 3px 23px rgba(0,0,0,.1);
   padding: 1em 3em;
 	transform-style: preserve-3d;
-  margin-bottom: 10em;
+  margin-top: 10em;
   transition: 0.2s;
-  margin-left: 23em;
-  border: 2px solid #ffd700;
+  margin-left: 15em;
+  border: 2px solid #CEA05B;
   color: white;
   font-weight: bolder;
 }
@@ -178,8 +198,8 @@
   margin: 2em;
   cursor: pointer;
   padding: 0.5em 0.75em;
-  background: #ffd700;
-  color: black;
+  background: #CEA05B;
+  color: white;
   transition: 0.2s;
   font-weight: bolder;
 }

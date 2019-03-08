@@ -9,6 +9,7 @@ class FlashcardInput extends Component {
             question: '',
             answer: '',
             category: '',
+            message: false
         }
     }
 
@@ -21,16 +22,20 @@ class FlashcardInput extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         this.props.createFlashcard({flashcard: this.state});
-        alert('Success');
         this.setState({
             question: '',
             answer: '',
-            category: ''
+            category: '',
+            message: !this.state.message
         });
     }
 
     render() {
         return (
+        <>
+        <div className="message-container"> 
+            {this.state.message ? 'Card successfully created!' : ''}
+        </div>
         <div className="form-container">
         <div className="form">
             <form onSubmit={this.handleSubmit}>
@@ -42,6 +47,7 @@ class FlashcardInput extends Component {
             </form>  
         </div>        
         </div>
+        </>
         )
     }
 

@@ -37,12 +37,10 @@ class DrawFlashcardContainer extends Component {
         return (
           <div className="current-card">
             <div className="card-row">
-              <Flashcard flashcard={this.state.currentFlashcard} />
+              <Flashcard flashcard={this.state.currentFlashcard} update={this.updateFlashcard}/>
             </div>
             
-            <div className="button-row">
-              <DrawFlashcard update={this.updateFlashcard}/>
-            </div>
+           
           </div>
         );
     }

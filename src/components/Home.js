@@ -1,4 +1,4 @@
 import React from 'react';
 import Description from './Description';
 
-export default () => <h1 className="app-name">What Is Jeopardy Gym?<br /><Description /></h1>
+export default () => <h1 className="app-name">Jeopardy Jym<br /><Description /></h1>
