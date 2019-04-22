@@ -2,7 +2,7 @@
 
 What is Jeopardy Jym for 500!? 
 
-Jeopardy Jym is a full stack React/Redux application with a Rails API backend. This application is geared towards prospective Jeopardy contestants with the hopes that it will prepare them for the actual gameshow. Users have the ability to study Jeopardy flashcars with actual categories, questions, and answers taken from the show's archive. If, however, a user has particular cards they hope to study, they can create Jeopardy flashcards of their own with ease in the app.
+Jeopardy Jym is a full stack React/Redux application with a Rails API backend. This application is geared towards prospective Jeopardy contestants with the hopes that it will prepare them for the actual gameshow. Users have the ability to study randomized Jeopardy flashcars with actual categories, questions, and answers taken from the show's archive. If, however, a user has particular cards they hope to study, they can create Jeopardy flashcards of their own with ease in the app.
 
 ## Technology
 
